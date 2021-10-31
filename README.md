@@ -1,5 +1,7 @@
 # plasma-splash-odin-dark-manjaro
-A KDE Plasma Splash Screen based on Manjaro Breath 2 2021 and Elementary OS Odin Dark wallpaper
+A KDE Plasma Splash Screen based on Manjaro Breath 2 2021 and Elementary OS Odin Dark wallpaper.
+
+Odin Dark Wallpaper was modified and licensed CC BY-SA 4.0 <http://creativecommons.org/licenses/by-sa/4.0/>
 
 ## Installation
 
@@ -13,3 +15,5 @@ To set this splash screen as your plasma splash screen:
 - Click Splash Screen
 - Choose Odin-Dark-Manjaro
 - Click Apply
+
+
