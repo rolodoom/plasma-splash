@@ -40,10 +40,10 @@ Item {
 
             anchors.centerIn: parent
 
-            source: "images/manjarologo.svgz"
+            source: "images/archlinux-logo.svgz"
 
             sourceSize.width: 254
-            sourceSize.height: 50
+            sourceSize.height: 75
             layer.enabled: true
             layer.effect: DropShadow {
                 transparentBorder: true
