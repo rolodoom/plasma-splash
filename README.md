@@ -1,4 +1,4 @@
-# plasma-splash-odin-dark-manjaro
+# plasma-splash-odin-dark
 A KDE Plasma Splash Screen based on Elementary OS Odin Dark wallpaper.
 
 ![Preview](/Odin-Dark/contents/previews/splash.png 'Preview')
