@@ -1,15 +1,22 @@
 # plasma-splash-odin-dark
-A KDE Plasma Splash Screen based on Elementary OS Odin Dark wallpaper.
-
-![Preview](/Odin-Dark/contents/previews/splash.png 'Preview')
+A KDE Plasma Splash Screen based on Manjaro Breath 2 2021 version and Elementary OS Odin Dark wallpaper.
 
 I just love this wallpaper, so I made this splash to complete my Linux Customization.
 
 Odin Dark Wallpaper was modified and licensed CC BY-SA 4.0 <http://creativecommons.org/licenses/by-sa/4.0/>
 
+## Flavors
+
+### Manjaro
+![Preview](/Odin-Dark-Manjaro/contents/previews/splash.png 'Preview')
+
+### Arch
+![Preview](/Odin-Dark-Arch/contents/previews/splash.png 'Preview')
+
+
 ## Installation
 
-Copy the folder `Odin-Dark` to `~/.local/share/plasma/look-and-feel/`
+Copy the folder `Odin-Dark-{flavor}` to `~/.local/share/plasma/look-and-feel/`
 
 ## Set the Splash Screen
 
