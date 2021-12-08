@@ -31,7 +31,7 @@ Item {
             property int gridUnit: boundingRect.height
             property int largeSpacing: units.gridUnit
             property int smallSpacing: Math.max(2, gridUnit/4)
-        }Manjaro
+        }
 
         Image {
             id: logo
