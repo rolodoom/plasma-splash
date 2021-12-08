@@ -7,9 +7,9 @@ Odin Dark Wallpaper was modified and licensed CC BY-SA 4.0 <http://creativecommo
 
 ## Flavors
 
-| Manjaro                                                               | Arch                                                               |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| ![Preview](/Odin-Dark-Manjaro/contents/previews/splash.png 'Preview') | ![Preview](/Odin-Dark-Arch/contents/previews/splash.png 'Preview') |
+| Arch Linux                                                         | Manjaro                                                               |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| ![Preview](/Odin-Dark-Arch/contents/previews/splash.png 'Preview') | ![Preview](/Odin-Dark-Manjaro/contents/previews/splash.png 'Preview') |
 
 ## Installation
 
