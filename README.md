@@ -42,7 +42,7 @@ Based on a Manjaro Cat wallpaper from Manjaro XFCE.
 
 ![Preview](/Manjaro-Cat/contents/previews/splash.png "Preview")
 
-    cp -R Odin-Dark-Arch ~/.local/share/plasma/look-and-feel/
+    cp -R Manjaro-Cat ~/.local/share/plasma/look-and-feel/
 
 ## Copyright
 
