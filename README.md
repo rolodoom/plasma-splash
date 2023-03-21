@@ -68,6 +68,16 @@ Based on a Mountain Dark wallpaper from Archlinux KDE.
 cp -R Mountain-Dark-Arch ~/.local/share/plasma/look-and-feel/
 ```
 
+### Nordic-Manjaro
+
+Based on a Rocky Montain Photo by Stein Egil from Pexels and the Manjaro Logo
+
+![Preview](/Nordic-Manjaro/contents/previews/splash.png "Preview")
+
+```bash
+cp -R Nordic-Manjaro ~/.local/share/plasma/look-and-feel/
+```
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/rolodoom/plasma-splash/issues) here on GitHub.
@@ -75,6 +85,8 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 ## About
 
 - **Odin Dark Wallpaper** and **Mountain Dark Wallpaper**: modified and licensed CC BY-SA 4.0 <http://creativecommons.org/licenses/by-sa/4.0/>
+
+- Nordic Photo by [stein egil liland from Pexels](https://www.pexels.com/photo/rocky-mountain-near-body-of-water-under-cloudy-sky-3610763/)
 
 ## License
 
