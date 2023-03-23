@@ -42,8 +42,8 @@ Item {
 
             source: "images/archlinux-logo.svgz"
 
-            sourceSize.width: 254
-            sourceSize.height: 75
+            sourceSize.width: 248
+            sourceSize.height: 65
             layer.enabled: true
             layer.effect: DropShadow {
                 transparentBorder: true
@@ -53,7 +53,7 @@ Item {
             }
         }
             Rectangle{
-                y: parent.height - (parent.height - logo.y) / 1.2 - height / 2
+                y: parent.height - (parent.height - logo.y) / 1.225 - height / 2
                 property real maxWidth: units.gridUnit * 13
                 anchors.left: parent.left
                 anchors.leftMargin: parent.width / 2 - maxWidth / 2
