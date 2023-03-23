@@ -68,6 +68,16 @@ Based on a Mountain Dark wallpaper from Archlinux KDE.
 cp -R Mountain-Dark-Arch ~/.local/share/plasma/look-and-feel/
 ```
 
+### Nordic-Arch
+
+Based on a Rocky Montain Photo by Stein Egil from Pexels and the Arch Linux Logo
+
+![Preview](/Nordic-Arch/contents/previews/splash.png "Preview")
+
+```bash
+cp -R Nordic-Arch ~/.local/share/plasma/look-and-feel/
+```
+
 ### Nordic-Manjaro
 
 Based on a Rocky Montain Photo by Stein Egil from Pexels and the Manjaro Logo
