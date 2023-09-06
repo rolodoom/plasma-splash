@@ -88,6 +88,16 @@ Based on a Rocky Montain Photo by Stein Egil from Pexels and the Manjaro Logo
 cp -R Nordic-Manjaro ~/.local/share/plasma/look-and-feel/
 ```
 
+### WhiteSur-Manjaro
+
+Based on WhiteSur theme for kde plasma and the Manjaro Logo
+
+![Preview](/WhiteSur-Manjaro/contents/previews/splash.png "Preview")
+
+```bash
+cp -R WhiteSur-Manjaro ~/.local/share/plasma/look-and-feel/
+```
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/rolodoom/plasma-splash/issues) here on GitHub.
