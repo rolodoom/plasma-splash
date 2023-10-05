@@ -28,6 +28,16 @@ To set this splash screen as your plasma splash screen:
 
 ## Preview
 
+### Catalina-Dark-Manjaro
+
+Based on Elementary OS Odin Dark wallpaper.
+
+![Preview](/Catalina-Dark-Manjaro/contents/previews/splash.png "Preview")
+
+```bash
+cp -R Catalina-Dark-Manjaro ~/.local/share/plasma/look-and-feel/
+```
+
 ### Odin-Dark-Manjaro
 
 Based on Elementary OS Odin Dark wallpaper.
