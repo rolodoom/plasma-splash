@@ -37,8 +37,8 @@ Rectangle {
 
             source: "images/debian-openlogo.svgz"
 
-            sourceSize.width: size // 100
-            sourceSize.height: size * 1.33// 133
+            sourceSize.width: 200 // 100
+            sourceSize.height: 200 * .2478// 133
         }
 
         // TODO: port to PlasmaComponents3.BusyIndicator
