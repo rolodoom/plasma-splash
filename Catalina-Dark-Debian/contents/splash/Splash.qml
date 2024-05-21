@@ -42,8 +42,8 @@ Item {
 
             source: "images/debian-openlogo.svgz"
 
-            sourceSize.width: 200
-            sourceSize.height: 49
+            sourceSize.width: 220
+            sourceSize.height: 54
             layer.enabled: true
             layer.effect: DropShadow {
                 transparentBorder: true
