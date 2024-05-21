@@ -1,68 +1,105 @@
-import QtQuick 2.5
+import QtQuick 2.15
+import QtGraphicalEffects 1.15
+
 import QtQuick.Window 2.2
 import org.kde.plasma.core 2.0 as PlasmaCore
 
-Rectangle {
+Item {
     id: root
     Image{
         anchors.fill: parent
         source: "images/background.png"
 
     }
+    
 
     property int stage
 
     onStageChanged: {
-        if (stage == 2) {
-            introAnimation.running = true;
-        } else if (stage == 5) {
-            introAnimation.target = busyIndicator;
-            introAnimation.from = 1;
-            introAnimation.to = 0;
-            introAnimation.running = true;
-        }
+//         if (stage == 1) {
+//             introAnimation.running = true
+//         }
     }
 
     Item {
         id: content
         anchors.fill: parent
         opacity: 0
+        TextMetrics {
+            id: units
+            text: "M"
+            property int gridUnit: boundingRect.height
+            property int largeSpacing: units.gridUnit
+            property int smallSpacing: Math.max(2, gridUnit/4)
+        }
 
         Image {
             id: logo
             //match SDDM/lockscreen avatar positioning
-            property real size: PlasmaCore.Units.gridUnit * 8
+            property real size: units.gridUnit * 8
 
             anchors.centerIn: parent
 
             source: "images/debian-openlogo.svgz"
 
-            sourceSize.width: 200 // 100
-            sourceSize.height: 200 * .2478// 133
-        }
-
-        // TODO: port to PlasmaComponents3.BusyIndicator
-        Image {
-            id: busyIndicator
-            //in the middle of the remaining space
-            y: parent.height - (parent.height - logo.y) / 2 - height/2
-            anchors.horizontalCenter: parent.horizontalCenter
-            source: "images/busy.svgz"
-            sourceSize.height: PlasmaCore.Units.gridUnit * 2
-            sourceSize.width: PlasmaCore.Units.gridUnit * 2
-            RotationAnimator on rotation {
-                id: rotationAnimator
-                from: 0
-                to: 360
-                // Not using a standard duration value because we don't want the
-                // animation to spin faster or slower based on the user's animation
-                // scaling preferences; it doesn't make sense in this context
-                duration: 2000
-                loops: Animation.Infinite
-                // Don't want it to animate at all if the user has disabled animations
-                running: PlasmaCore.Units.longDuration > 1
+            sourceSize.width: 200
+            sourceSize.height: 49
+            layer.enabled: true
+            layer.effect: DropShadow {
+                transparentBorder: true
+                horizontalOffset: 1
+                verticalOffset: 1
+                radius: 3
             }
         }
+            Rectangle{
+                y: parent.height - (parent.height - logo.y) / 1.2 - height / 2
+                property real maxWidth: units.gridUnit * 13
+                anchors.left: parent.left
+                anchors.leftMargin: parent.width / 2 - maxWidth / 2
+                height:PlasmaCore.Units.gridUnit/3
+                radius: height/2
+                
+                width: (maxWidth / 5) * (stage - 1 - 0.01)
+                
+                layer.enabled: true
+                layer.effect: DropShadow {
+                    transparentBorder: true
+                    horizontalOffset: 1
+                    verticalOffset: 1
+                    radius: 3
+                }
+                Behavior on width{
+                       NumberAnimation {
+                           easing: Easing.InOutQuad
+                    }
+                }
+                
+            }
+            Image {
+                y: parent.height - (parent.height - logo.y) / 2.7 - height / 2
+                id: busyIndicator
+                
+                source: "images/busy.svgz"
+                sourceSize.height: units.gridUnit * 2.5
+                sourceSize.width: units.gridUnit * 2.5
+                anchors.horizontalCenter: parent.horizontalCenter
+
+                layer.enabled: true
+                layer.effect: DropShadow {
+                    transparentBorder: true
+                    horizontalOffset: 0
+                    verticalOffset: 0
+                    radius: 4
+                    RotationAnimator on rotation {
+                        id: rotationAnimator
+                        from: 0
+                        to: 360
+                        duration: 2000
+                        loops: Animation.Infinite
+                    }
+                }
+            }
         Row {
             spacing: PlasmaCore.Units.smallSpacing*2
             anchors {
@@ -84,15 +121,16 @@ Rectangle {
                 sourceSize.width: PlasmaCore.Units.gridUnit * 2
             }
         }
+
     }
 
     OpacityAnimator {
         id: introAnimation
-        running: false
+        running: true
         target: content
         from: 0
         to: 1
-        duration: PlasmaCore.Units.veryLongDuration * 2
+        duration: 500
         easing.type: Easing.InOutQuad
     }
 }
