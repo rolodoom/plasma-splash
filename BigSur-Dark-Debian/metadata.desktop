@@ -1,0 +1,12 @@
+[Desktop Entry]
+Comment=KDE Plasma Splash Screen based on a OS X BiSur Dark Wallpaper and the Debian Logo
+Name=Catalina-Dark-Debian
+X-KDE-PluginInfo-Author=Rolando Ramos Torres
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=rolodoom@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL 3.0
+X-KDE-PluginInfo-Name=BigSur-Dark-Debian
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://github.com/rolodoom/plasma-splash
+X-KDE-ServiceTypes=Plasma/LookAndFeel

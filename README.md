@@ -28,6 +28,16 @@ To set this splash screen as your plasma splash screen:
 
 ## Preview
 
+### BigSur-Dark-Debian
+
+Based on OS X BigSur Dark wallpaper.
+
+![Preview](/BigSur-Dark-Debian/contents/previews/splash.png "Preview")
+
+```bash
+cp -R BigSur-Dark-Debian ~/.local/share/plasma/look-and-feel/
+```
+
 ### Catalina-Dark-Manjaro
 
 Based on OS X Catalina Dark wallpaper.
